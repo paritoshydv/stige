@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>MINI PROJECT</title>
+</head>
+<body>
+    <section class="front " >
+        <header>
+            <h2>TRAVEL</h2>
+            <div class="toggle "></div>
+        </header>
+        <video src="https://vod-progressive.akamaized.net/exp=1629755446~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1082%2F13%2F330412624%2F1297186305.mp4~hmac=10e13727f5a7188ebcdb9cc4a838935f019911c871d82c4ec06d59f82dccdd1f/vimeo-prod-skyfire-std-us/01/1082/13/330412624/1297186305.mp4?filename=Pexels+Videos+21" muted autoplay loop ></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2 class="logo">NEVER STOP TO</h2>
+            <h3>EXPLORING THE WORLD</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, atque. Similique recusandae iusto fuga tempore ex voluptatem ullam rerum voluptate. </p>
+            <a href="#">EXPLORE</a>
+        </div>
+        <ul class="social">
+           <li><a href="#"><img src="instagram.svg"alt="" width="30px" height="30px"></a></li> 
+           <li><a href="#"><img src="facebook.svg" alt="" width="30px" height="30px"></a></li> 
+           <li><a href="#"><img src="youtube.svg" alt="" width="30px" height="30px"></a></li> 
+        </ul>
+
+</section>
+<div class="menu">
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">DESTINATION</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
+</div>
+<script>
+    const menutoggle =document.querySelector('.toggle');
+    const front =document.querySelector('.front');
+    menutoggle.addEventListener('click', function(){
+        menutoggle.classList.toggle('active');
+        front.classList.toggle('active');
+    })
+</script>
+</body>
+</html>
